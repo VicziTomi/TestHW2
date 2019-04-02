@@ -1,3 +1,5 @@
+import ClubOfFighters.Warrior;
+
 import java.util.Arrays;
 
 public class Main {
@@ -17,6 +19,7 @@ public class Main {
         System.out.println(returnMiddleElement(input));
         System.out.println("Átlag: " + average(input));
 
+        Runable.fightEvent(new Warrior(3, 15), new Warrior(5, 21));
     }
 
     public static int returnSmallest(int[] arr) {
